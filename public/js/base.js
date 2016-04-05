@@ -48,6 +48,7 @@ function showTab(is_show){
     $("#div_tab").show().siblings('div').removeClass("col-md-12 col-xs-12").addClass("col-md-2 col-xs-2");
   }else{
     $("#div_tab").hide().siblings('div').removeClass("col-md-2 col-xs-2").addClass("col-md-12 col-xs-12");
+    $("#ul_category li").removeClass("active");
   }
 }
 
@@ -90,7 +91,6 @@ $(document).ready(function() {
   $("a.pjaxlink").on("click", function() {
     var href = $(this).attr("href");
     if(href && (href == "/")){
-        alert(123);
         showTab(false);
     }
   });
