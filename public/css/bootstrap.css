@@ -6787,5 +6787,20 @@ a.list-group-item-terry:hover, a.list-group-item-terry:focus {
 }
 
 .panel-terry > .panel-heading {
+  color: #888;
   background-color: transparent;
+}
+
+.panel-terry > .panel-heading a:hover {
+  font-weight:bold;
+  color:#fff;
+}
+
+.panel-terry a{
+  text-decoration:none !important;
+}
+
+.panel-terry .badge{
+  background-color:transparent !important;
+  color:#888 !important
 }
