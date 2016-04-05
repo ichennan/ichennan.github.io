@@ -12,7 +12,6 @@ comments: false
     {% capture next_month %}{{ post.previous.date | date: "%m" }}{% endcapture %}
   
     {% if forloop.first %}
-      <ul>
       <legend id="{{this_year}}-{{this_month}}">{{this_year}}-{{this_month}}</legend>
     {% endif %}
     <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo;
@@ -20,17 +19,13 @@ comments: false
     </li>
   
     {% if forloop.last %}
-      </ul>
     {% else %}
       {% if this_year != next_year %}
-        </ul>
         <legend id="{{next_year}}-{{next_month}}">{{next_year}}-{{next_month}}</legend>
-        <ul>
-      {% else %}    
+      {% else %}
         {% if this_month != next_month %}
-        </ul>
+        <hr>
         <legend id="{{next_year}}-{{next_month}}">{{next_year}}-{{next_month}}</legend>
-        <ul>
         {% endif %}
       {% endif %}
     {% endif %}
