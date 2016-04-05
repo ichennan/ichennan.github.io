@@ -6808,4 +6808,16 @@ a.list-group-item-terry:hover, a.list-group-item-terry:focus {
 legend.legend-terry{
   text-align:right;
   border:0;
+  margin-bottom:0;
+  color:#fff;
+  font-style:italic;
+}
+
+.aside3-content a{
+  color:#fff;
+  text-decoration:none !important;
+}
+
+.aside3-content a:hover{
+  font-weight:bold !important;
 }
