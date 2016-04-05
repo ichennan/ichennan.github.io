@@ -117,7 +117,11 @@ blockquote p {
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: #16a085;
-  background-color: #ccc;
+  background-color: #303030 !important;
+}
+.nav-pills>li>a:hover{
+  color: #16a085 !important;
+  background-color: #ccc !important;
 }
 /* 显示评论按钮 */
 .show-commend {

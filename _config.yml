@@ -34,7 +34,7 @@ cates:
 
 # localization
 locals:
-  tags: tags
-  about: about
+  tags: Tags
+  about: About
   newest: newest
-  archive: archive
+  archive: Archive
