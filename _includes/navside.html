@@ -49,9 +49,9 @@
                       <span class="badge pull-right">{{ tag[1].size }}</span>
                     </h4>
                   </div>
-                  <div id="{{ tag[0] }}" class="list-group">
+                  <div id="{{ tag[0] }}" class="panel-collapse collapse">
                     {% for post in tag[1] %}
-                      <a  href='{{ post.url }}' class="list-group-item-terry  pjaxlink">
+                      <a  href='{{ post.url }}' class="list-group-item pjaxlink">
                         {{post.title}}
                       </a>
                     {% endfor %}
