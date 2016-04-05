@@ -6804,3 +6804,8 @@ a.list-group-item-terry:hover, a.list-group-item-terry:focus {
   background-color:transparent !important;
   color:#888 !important
 }
+
+legend.legend-terry{
+  text-align:right;
+  border:0;
+}
