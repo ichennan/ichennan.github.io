@@ -72,11 +72,11 @@ $(document).ready(function() {
   contentEffects();
 
   $("#ul_category li").on("click", function() {
-    $("#div_tab").show();
+    $("#div_tab").show().siblings('div').removeClass("col-md-12 col-xs-12").addClass("col-md-2 col-xs-2");
   });
 
   $("#ul_about li").on("click", function() {
-    $("#div_tab").hide();
+    $("#div_tab").hide().siblings('div').removeClass("col-md-2 col-xs-2").addClass("col-md-12 col-xs-12");
   });
 });
 function contentEffects(){
