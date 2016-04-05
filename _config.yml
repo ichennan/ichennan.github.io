@@ -34,7 +34,7 @@ active: 读书
 
 # localization
 locals:
-  tags: 标签
+  tags: #tags
   about: 关于
   newest: 最新
   archive: 存档
