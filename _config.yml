@@ -34,7 +34,7 @@ cates:
 
 # localization
 locals:
-  tags: Tags
-  about: About
-  newest: newest
-  archive: Archive
+  tags: 标签
+  about: 关于
+  newest: 最新
+  archive: 存档
