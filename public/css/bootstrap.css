@@ -6821,3 +6821,7 @@ legend.legend-terry{
 .aside3-content a:hover{
   font-weight:bold !important;
 }
+
+#archive-page{
+  background: #888;
+}
