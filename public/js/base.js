@@ -71,11 +71,11 @@ $(document).ready(function() {
   });
   contentEffects();
 
-  $("#ul_category").on("click", function() {
+  $("#ul_category li").on("click", function() {
     $("#div_tab").show();
   });
 
-  $("#ul_about").on("click", function() {
+  $("#ul_about li").on("click", function() {
     $("#div_tab").hide();
   });
 });
