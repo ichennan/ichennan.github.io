@@ -15,16 +15,17 @@ comments: false
       <legend id="{{this_year}}-{{this_month}}" class="text-right">{{this_year}}-{{this_month}}</legend>
     {% endif %}
     <li>
-      <a class="pjaxlink" href="{{ post.url }}"> {{ post.date | date: "%Y-%m-%d" | post.title }}</a>
-      <hr>
+      <a class="pjaxlink" href="{{ post.url }}"> {{ post.date | date: "%Y-%m-%d" }} {{ post.title }}</a>
     </li>
   
     {% if forloop.last %}
     {% else %}
       {% if this_year != next_year %}
+        <hr>
         <legend id="{{next_year}}-{{next_month}}">{{next_year}}-{{next_month}}</legend>
       {% else %}
         {% if this_month != next_month %}
+        <hr>
         <legend id="{{next_year}}-{{next_month}}">{{next_year}}-{{next_month}}</legend>
         {% endif %}
       {% endif %}
