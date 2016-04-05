@@ -12,10 +12,10 @@ comments: false
     {% capture next_month %}{{ post.previous.date | date: "%m" }}{% endcapture %}
   
     {% if forloop.first %}
-      <legend id="{{this_year}}-{{this_month}}" class="align-right">{{this_year}}-{{this_month}}</legend>
+      <legend id="{{this_year}}-{{this_month}}" class="text-right">{{this_year}}-{{this_month}}</legend>
     {% endif %}
-    <li><span>{{ post.date | date: "%Y-%m-%d" }} </span>
-      <a class="pjaxlink" href="{{ post.url }}"> {{ post.title }}</a>
+    <li>
+      <a class="pjaxlink" href="{{ post.url }}"> {{ post.date | date: "%Y-%m-%d" | post.title }}</a>
       <hr>
     </li>
   
