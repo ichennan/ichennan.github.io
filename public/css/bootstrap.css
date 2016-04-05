@@ -6780,3 +6780,14 @@ a.list-group-item-terry:hover, a.list-group-item-terry:focus {
     color: #fff;
     font-weight: bold;
 }
+
+.panel-info > .panel-heading {
+  color: #31708f;
+  /* background-color: #d9edf7; */
+  border-color: #bce8f1;
+}
+
+.panel-terry {
+  background-color: transparent;
+  border: 0;
+}
