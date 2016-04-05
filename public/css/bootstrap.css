@@ -6809,19 +6809,6 @@ legend.legend-terry{
   text-align:right;
   border:0;
   margin-bottom:0;
-  color:#fff;
+  color:#999;
   font-style:italic;
-}
-
-.aside3-content a{
-  color:#fff;
-  text-decoration:none !important;
-}
-
-.aside3-content a:hover{
-  font-weight:bold !important;
-}
-
-#archive-page{
-  background: #888;
 }
