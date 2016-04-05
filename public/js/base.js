@@ -43,6 +43,14 @@ function content_click(is_show){
   }
 }
 
+function showTab(is_show){
+  if(is_show){
+    $("#div_tab").show().siblings('div').removeClass("col-md-12 col-xs-12").addClass("col-md-2 col-xs-2");
+  }else{
+    $("#div_tab").hide().siblings('div').removeClass("col-md-2 col-xs-2").addClass("col-md-12 col-xs-12");
+  }
+}
+
 $(document).ready(function() {
   /* 控制左侧 aside 的动作 */
   $("#nav_btn").on('click', function() {
@@ -72,12 +80,14 @@ $(document).ready(function() {
   contentEffects();
 
   $("#ul_category li").on("click", function() {
-    $("#div_tab").show().siblings('div').removeClass("col-md-12 col-xs-12").addClass("col-md-2 col-xs-2");
+    showTab(true);
   });
 
   $("#ul_about li").on("click", function() {
-    $("#div_tab").hide().siblings('div').removeClass("col-md-2 col-xs-2").addClass("col-md-12 col-xs-12");
+    showTab(false);
   });
+
+  showTab(false);
 });
 function contentEffects(){
   //remove the asidebar
