@@ -3,21 +3,29 @@
 估计能把Markdown基本语法分两篇日志来写的也没几个了，因为在`为知`上显示已经超过一个屏幕了，嗯，朕就是这样的汉子
 
 链接方法一
+
 [点我进百度](www.baidu.com)
+
 ```
 [点我进百度](www.baidu.com)
 ```
 
 链接方法二
+
 [我也是百度][1]
+
 [1]: www.baidu.com
+
 ```
 [我也是百度][1]
 [1]: www.baidu.com
+
 ```
 
 图片
+
 ![某个图片](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png)
+
 ```
 ![某个图片](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png)
 ```
