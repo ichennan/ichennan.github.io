@@ -87,6 +87,14 @@ $(document).ready(function() {
     showTab(false);
   });
 
+  $("a.pjaxlink").on("click", function() {
+    var href = $(this).attr("href");
+    if(href && (href == "/")){
+        alert(123);
+        showTab(false);
+    }
+  });
+
   showTab(false);
 });
 function contentEffects(){
