@@ -1,6 +1,8 @@
 /* 控制导航按钮动作 */
 function nav_click(is_show) {
-  if (is_show) {
+  //总是显示 terry
+  //if (is_show) {
+  if (true) {
     /* 显示左侧aside */
     $('.aside')
       .addClass('visible-md visible-lg')
@@ -30,7 +32,9 @@ function nav_click(is_show) {
 }
 /* 控制文章章节列表按钮 */
 function content_click(is_show){
-  if (is_show) {
+  //总是显示 terry
+  //if (is_show) {
+  if (true) {
     $('#content_table').show();
     $('#content_btn i').removeClass('fa-plus').addClass('fa-minus');
   } else {
