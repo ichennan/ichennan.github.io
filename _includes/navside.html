@@ -6,7 +6,7 @@
       <br><br><br><br>
       <ul class="nav nav-pills nav-stacked">
         {% for category in site.categories %}     <!-- 这里是aside1的读书、生活、科研、技术、绘画-->
-         <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
+         <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }} 111</a></li>
         {% endfor %}
         <!-- <li><a href="#tags" data-toggle="tab"><i class="fa fa-tags fa-lg"></i></a></li>
         <li><a class="pjaxlink" href="/pages/archive.html"><i class="fa fa-archive fa-lg"></i></a></li>
@@ -16,8 +16,8 @@
       <div class="aside1_bottom">
         <ul class="nav nav-pills nav-stacked">
           <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>
-          <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li>
-          <li><a class="pjaxlink" href="/pages/archive.html">{{ site.locals.archive }}</a></li>
+          <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }} 1231</a></li>
+          <li><a class="pjaxlink" href="/pages/archive.html">{{ site.locals.archive }} 123123</a></li>
         </ul>
           <table class="table table-condensed">
           <tr>
