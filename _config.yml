@@ -24,10 +24,6 @@ ga:
   id: UA-54262064-1 
   url: ichennan.github.io
 
-# disqus
-disqus:
-  shortname: ichennan
-
 # default active
 active: 读书
 
