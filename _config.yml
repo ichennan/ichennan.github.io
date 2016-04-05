@@ -2,36 +2,33 @@ permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: redcarpet
 
-# 作者信息
+# Author
 author: 
-  name: Anya Lin
-  email: lay.1010@hotmail.com
-  link: http://painterlin.com
-  weibo: http://weibo.com/orangeissweet
-  github: http://github.com/lay1010
-  music: http://site.douban.com/linanya
-  linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
+  name: Terry Chen Nan
+  email: ichennan@sina.com
+  link: http://ichennan.github.io
+  github: http://github.com/ichennan
 
-# 站点信息
-title: 林安亚的博客
-description: My personal blog
-url: http://painterlin.com
+# Site
+title: Ichennan
+description: Blog of Terry Chen Nan
+url: http://ichennan.github.io
 rss_url: /pages/atom.xml
 
-# gavatar头像及Favicon
+# gavatar Favicon
 gavatar: /public/img/deer3.png
 favicon: /public/img/deer3.png
 
-# google analytics 设置
+# google analytics
 ga:
   id: UA-54262064-1 
-  url: painterlin.com
+  url: ichennan.github.io
 
-# disqus 设置
+# disqus
 disqus:
-  shortname: painterlin
+  shortname: ichennan
 
-# 主题设置，自动激活某个标签
+# default active
 active: 读书
 
 # 首页除了最新文章外显示分类
@@ -39,9 +36,9 @@ cates:
   - Optimization
   - LaTeX
 
-# 中文本地化
+# localization
 locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
+  tags: tags
+  about: about
+  newest: newest
+  archive: archive

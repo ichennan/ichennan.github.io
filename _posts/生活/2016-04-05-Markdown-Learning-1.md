@@ -1,14 +1,11 @@
 ---
 layout: post
-title: Markdown Learning
+title: Markdown Learning - 1
 category: 生活
 tags: 年终总结
 keywords:
 description:
 ---
-
-#Markdown Learning - 1
-
 话不多说，先来看看Markdown的基本语法，其实也就那么几个，应该很容易掌握。
 
 首先标题，不同层级不同大小

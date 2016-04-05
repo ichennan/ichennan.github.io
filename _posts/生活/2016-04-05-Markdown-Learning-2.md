@@ -1,14 +1,11 @@
 ---
 layout: post
-title: Markdown Learning
+title: Markdown Learning - 2
 category: 生活
 tags: 年终总结
 keywords:
 description:
 ---
-
-#Markdown Learning - 2
-
 估计能把Markdown基本语法分两篇日志来写的也没几个了，因为在`为知`上显示已经超过一个屏幕了，嗯，朕就是这样的汉子
 
 链接方法一
