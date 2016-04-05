@@ -70,6 +70,14 @@ $(document).ready(function() {
     contentEffects();
   });
   contentEffects();
+
+  $("#ul_category").on("click", function() {
+    $("#div_tab").show();
+  });
+
+  $("#ul_about").on("click", function() {
+    $("#div_tab").hide();
+  });
 });
 function contentEffects(){
   //remove the asidebar
