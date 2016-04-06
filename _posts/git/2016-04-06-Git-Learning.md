@@ -15,7 +15,7 @@ description:
 你在 `github` 上有账号, 为自己的小项目建立了一个小仓库, 也就是创建了一个 `repository` , 假设名字叫 `firstProject`  
 现在你要让 `github` 把你的电脑加为好友, 这样 `github` 就可以把项目发给你的电脑, 或者你在电脑上更改后发给 `github`  
 怎么加为好友呢, 加 `qq` 好友是用 `qq` 号, `github` 就是用你电脑的 `ssh` 号  
-`linux` , `Win` , `Mac` 下生成ssh的命令都差不多, 下面是 `linux` 的  
+`linux` , `Win` , `Mac` 下生成 `ssh` 的命令都差不多, 下面是 `linux` 的  
 
 ```
 $ ssh-keygen -t rsa
@@ -72,8 +72,9 @@ $ git diff abc.md
 在 `commit` 这边要说一下, 通常文件有三种状态  
 
 >Changes to be committed : 只有此状态下才会被push到github  
-
+>
 >Changes not staged for commit : 状态不对, 你需要add或rm, 或者checkout之后才能处理  
+>
 >Untracked files : 你需要add或rm先, 它们才能被commit  
 
 通常来说 `git commit` 后面都需要加上 `-m abc` 表示注释, 如果不加, 会列出所有文件, 你需要删掉#号, 保存退出 `:wq` 后才会完成 `commit`  
