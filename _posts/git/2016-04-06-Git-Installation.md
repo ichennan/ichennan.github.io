@@ -7,7 +7,9 @@ keywords:
 description:
 ---
 终于开始和 `linux` 打交道了, 开始学习 `spark` , 准备把学习过程中的项目都放到 `github` 上, 再用 `github pages` 记录一下学习过程  
-看到 `github pages` 默认是用 `jekyll` , 以为只有 `linux` 下才能使用, 折腾了一天弄好了, 发现没有必要, 在 `Win` 或 `Mac` 下也可以, 反正 `github` 上有引擎, 自己只要负责写txt就好了  
+看到 `github pages` 默认是用 `jekyll` , 以为只有 `linux` 下才能使用, 折腾了一天弄好了  
+发现没有必要, 在 `Win` 或 `Mac` 下也可以, 反正 `github` 上有引擎会自动解析成网页
+我们只要下载好模板到项目, 然后负责写文档提交就行了  
 所以最后在 `linux` , `Win` , `Mac` 下都安装了 `Git` , 开始接触 `vim` , 然后学习了一下 `Markdown`  
 
 ##Linux安装Git(CentOS)  
@@ -83,7 +85,7 @@ git --version
 
 嗯, 这个可难了, 下载一个叫 `git-2.6.4-intel-universal-mavericks.dmg` 的文件, 安装就ok了  
 网址 [https://git-scm.com/download/mac](https://git-scm.com/download/mac)  
-这个安装完似乎啥都不做, 直接终端输入git --version已经可以了  
+这个安装完似乎啥都不做, 直接终端输入 `git --version` 已经可以了  
 
 ##Win安装Git  
 
