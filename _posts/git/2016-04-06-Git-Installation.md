@@ -92,4 +92,6 @@ git --version
 人们说 `Win` 下 `Git` 的软件有很多, 嗯， 反正我用的和 `Mac` 上的一样的  
 [https://git-scm.com/download/win](https://git-scm.com/download/win)  
 安装完后再在所有程序里会有个 `Git` 文件夹, 点开其中的 `Git Bash` 就到 `Git` 的终端了  
-顺带说一句, 这个 `Git` 除了 `Git` 的命令外, 还可以用 `Vim`
+顺带说一句, 这个 `Git` 除了 `Git` 的命令外, 还可以用 `Vim`  
+
+目前在Win下, 我还有用 `Intellij` 的 `git` 配合使用, 不过习惯了 `Git Bash` 之后似乎觉得没有必要了
