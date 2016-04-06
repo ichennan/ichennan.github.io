@@ -29,7 +29,8 @@ yun install -gcc
 curl -sSL https://get.rvm.io | bash -s stable
 ```  
 
-这个时候会提示签名失败吧啦吧啦之类的  
+这个时候会提示签名失败之类的  
+
 ![1](/public/img/2016-04-06-Jekyll-Installation-1.png)  
 
 你就按它提示的输入  
