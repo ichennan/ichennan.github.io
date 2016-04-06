@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll Installation
 category: Git
-tags: Jekyll Installation
+tags: jekyll installation
 keywords:
 description:
 ---

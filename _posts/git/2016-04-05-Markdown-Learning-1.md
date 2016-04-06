@@ -2,7 +2,7 @@
 layout: post
 title: Markdown Learning - 1
 category: Git
-tags: Markdown
+tags: markdown
 keywords:
 description:
 ---

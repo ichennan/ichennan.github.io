@@ -2,7 +2,7 @@
 layout: post
 title: Git Learning
 category: Git
-tags: Git Github
+tags: git github
 keywords:
 description:
 ---

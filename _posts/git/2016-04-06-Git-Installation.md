@@ -2,7 +2,7 @@
 layout: post
 title: Git Installation
 category: Git
-tags: Git Installation
+tags: git installation
 keywords:
 description:
 ---
