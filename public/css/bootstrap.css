@@ -1535,12 +1535,16 @@ samp {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
-  padding: 2px 4px;
-  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
   color: #0089FF;
-  background-color: #999;
-  border-radius: 4px;
+  background-color: #fafafa;
+  border-radius: 2px;
 /* terry
+  padding: 2px 4px;
+  border-radius: 4px;
+  background-color: #999;
+  font-size: 90%;
   color: #c7254e;
   background-color: #f9f2f4;
 */
