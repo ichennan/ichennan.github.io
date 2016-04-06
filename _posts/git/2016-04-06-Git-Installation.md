@@ -17,49 +17,64 @@ description:
 
 ```
 yum install git
-```
+```  
 
 ok, 如果你用的是CentOS7或以上, 它提示的版本是2.0.0+ 的话, 你确认安装, 应该就可以了  
 如果提示版本是1.7, 那么和我一样, 开始手动安装  
 
 **安装依赖软件**  
+
 ```
 yum -y install zlib-devel openssl-devel perl cpio expat-devel gettext-devel
 yum install curl-devel
 yum install autoconf
-```
+```  
+
 **下载Git**  
+
 ```
 mkdir /app/git
 cd /app/git
 wget http://codemonkey.org.uk/projects/git-snapshots/git/git-latest.tar.xz
-```
+```  
+
 **解压Git**  
-```
+
+```  
 xz -d git-latest.tar.xz
 tar -xvf git-latest.tar
-```
+```  
+
 **安装Git**(git-2016-04-01这个是你解压git的生成的文件)  
-```
+
+```  
 autoconf
 ./configure --prefix=/app/git/git-2016-04-01
 make
 make install
-```
+```  
+
 **配置环境变量**  
+
 ```
 vim /etc/profile
-```
+```  
+
 **在文本最后添加上**  
+
 ```
 export GIT_HOME=/app/git/git-2016-04-01
 export PATH=$GIT_HOME:$PATH
-```
+```  
+
 **使环境变量生效**  
+
 ```
 source /etc/profile
-```
+```  
+
 **ok, 大功告成, 亲个嘴吧**  
+
 ```
 git --version
 ```
