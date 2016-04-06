@@ -14,9 +14,9 @@ description:
 **yum安装ruby**  
 
 ```
-yum install -y ruby
-yum install -y ruby-devel ruby-docs ruby-ri ruby-rdoc
-yum install -y rubygems
+$ yum install -y ruby
+$ yum install -y ruby-devel ruby-docs ruby-ri ruby-rdoc
+$ yum install -y rubygems
 ```  
 
 如果这时候你尝试去安装 `jekyll` , 你会发现它说版本太低之类的, 所以你要开始手动之旅了  
@@ -25,8 +25,8 @@ yum install -y rubygems
 **安装rvm**  
 
 ```
-yun install -gcc
-curl -sSL https://get.rvm.io | bash -s stable
+$ yun install -gcc
+$ curl -sSL https://get.rvm.io | bash -s stable
 ```  
 
 这个时候会提示签名失败之类的  
@@ -36,19 +36,19 @@ curl -sSL https://get.rvm.io | bash -s stable
 你就按它提示的输入  
 
 ```
-gpg2 --keyserver hkp://keys.gnupg.net --recv-keys ***后面的字符串***
+$ gpg2 --keyserver hkp://keys.gnupg.net --recv-keys ***后面的字符串***
 ```  
 
 之后你再走这条命令就ok了  
 
 ```
-curl -sSL https://get.rvm.io | bash -s stable
+$ curl -sSL https://get.rvm.io | bash -s stable
 ```  
 
 接着  
 
 ```
-source /etc/profile.d/rvm.sh
+$ source /etc/profile.d/rvm.sh
 ```  
 
 至此, `rvm` 安装成功, 可以用 `rvm -v` 测试一下  
@@ -57,9 +57,9 @@ source /etc/profile.d/rvm.sh
 **安装ruby**  
 
 ```
-rvm install ruby 2.0.0
-rvm list
-rvm use 2.0.0 --default
+$ rvm install ruby 2.0.0
+$ rvm list
+$ rvm use 2.0.0 --default
 ```
 
 `list` 是列出本机所有 `ruby` 版本, `use` 是使用版本, `default` 是更改默认版本, 不然有可能重启后又用了低版本
@@ -67,7 +67,7 @@ rvm use 2.0.0 --default
 **安装Jekyll**  
 
 ```
-gem install jekyll
+$ gem install jekyll
 ```  
 
 **使用Jekyll**
@@ -76,14 +76,14 @@ gem install jekyll
 这边说下简单的创建和使用  
 
 ```
-jekyll new myFirstJekyll
+$ jekyll new myFirstJekyll
 ```  
 
 这样就创建好了, 进入到 `myFirstJekyll` 文件夹, 然后启动服务, 就可以了  
 
 ```
-cd myFirstJekyll
-jekyll serve
+$ cd myFirstJekyll
+$ jekyll serve
 ```  
 
 然后你用浏览器输入 [http://localhost:4000](http://localhost:4000) 就可以看到网站了
