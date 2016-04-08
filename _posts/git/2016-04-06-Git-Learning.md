@@ -6,7 +6,7 @@ tags: git github
 keywords:
 description:
 ---
-##git & github  
+## git & github  
 
 这边会说说 `git` 和 `github` , 大概来说, `git` 就是工具, `github` 是大仓库  
 你可以用 `github` , 也可以用什么 `abchub` 之类的, 或者只用本机, 总之 `github` 就是一个装东西的服务器  
@@ -43,7 +43,7 @@ $ ssh –T git@github.com
 
 它会提示什么什么 `successfully` , `but` 什么什么, 就表示成功了  
 
-##git  
+## git  
 
 然后就是从 `github` 上拖项目过来, 即使是空的  
 
