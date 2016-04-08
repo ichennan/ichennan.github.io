@@ -6,7 +6,9 @@ tags: markdown
 keywords:
 description:
 ---
-话不多说，先来看看Markdown的基本语法，其实也就那么几个，应该很容易掌握。
+发现在 `github` 里面介绍的最为通俗易用, 大家可以直接参考 [Github Markdown 语法](https://guides.github.com/features/mastering-markdown)  
+
+话不多说，先来看看 `Markdown` 的基本语法，其实也就那么几个，应该很容易掌握。
 
 首先标题，不同层级不同大小
 
