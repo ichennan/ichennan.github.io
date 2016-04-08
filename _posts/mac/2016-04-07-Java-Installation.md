@@ -50,8 +50,8 @@ $ sudo rm -fr /Library/Java/JavaVirtualMachines/1.7.x...
 
 >JAVA_HOME=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home  
 
-发现文件夹名里有空格, `mac` 识别不了, 这个应该so easy, 转义符或者加引号
-然 !!!
+发现文件夹名里有空格, `mac` 识别不了, 这个应该so easy, 转义符或者加引号  
+然 !!!  
 你有以下三种方式, 假设文件夹名是 `/ab cd/`  
 
 >JAVA_HOME=/ab\ cd/  
@@ -72,9 +72,9 @@ $ $JAVA_HOME
 $ '$JAVA_HOME'
 ```
 
-同理, 你的 `$PATH` 也需要变成 `'$PATH'`
-尼玛啊, 有个毛用!!!
-然后听人说, 建立链接, 哇, 一想果然是个好主意
+同理, 你的 `$PATH` 也需要变成 `'$PATH'`  
+尼玛啊, 有个毛用!!!  
+然后听人说, 建立链接, 哇, 一想果然是个好主意  
 
 ```
 $ ln -sv /ab\ cd /aaa
