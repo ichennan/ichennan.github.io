@@ -1,0 +1,12 @@
+---
+layout: post
+title: 2016-04-07
+category: Blog
+tags: blog
+keywords:
+description:
+---
+##2016-04-07  
+
+早上忙着sharepoint2013升级, 下午学着做了一个报表, 一天就过去了...  
+回来搜搜scala, 准备试试play framework, 一晚上都没下完... 睡觉去了
