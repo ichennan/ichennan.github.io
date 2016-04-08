@@ -1,6 +1,7 @@
 permalink: /:year/:month/:day/:title.html
 paginate: 10
-markdown: redcarpet
+#markdown: redcarpet
+markdown: kramdown
 
 # Author
 author: 
