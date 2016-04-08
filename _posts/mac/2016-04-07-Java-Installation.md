@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2016-04-08
+title: Java8 Installation on Mac
 category: Mac
 tags: mac java installation
 keywords:
@@ -13,7 +13,7 @@ description:
 然后网上说的通过这个命令可以看见机器上装了多少个版本的 `java`   
 
 ```
-/usr/libexec/java_home -v
+$ /usr/libexec/java_home -v
 ```  
 
 然并卵, 这个命令应该是看 `/Library/Java/JavaVirtualMachines` 这个文件夹下面有多少个 `java` 版本  
@@ -30,8 +30,8 @@ description:
 按 `Oracle` 官网上说是这样的  
 
 ```
-sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
-sudo rm -fr /Library/PreferencesPanes/JavaControlPanel.prefpane
+$ sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+$ sudo rm -fr /Library/PreferencesPanes/JavaControlPanel.prefpane
 ```  
 
 第一条命令的话, 你会发现它把所有的 `java` 都删了, 包括 `java7` , `java8`  
@@ -39,7 +39,7 @@ sudo rm -fr /Library/PreferencesPanes/JavaControlPanel.prefpane
 两条命令完之后, 我自己再跑了一条, 因为我明明记得 `JavaVirtualMachines` 这个下面还有 `java7` , 所以  
 
 ```
-sudo rm -fr /Library/Java/JavaVirtualMachines/1.7.x...
+$ sudo rm -fr /Library/Java/JavaVirtualMachines/1.7.x...
 ```  
 
 就我所知的, 这样是应该把 `java7` 给弄掉了  
@@ -48,9 +48,7 @@ sudo rm -fr /Library/Java/JavaVirtualMachines/1.7.x...
 
 再来说上面说的坑, 就是当我在 `~/.bash-profile` 里设置  
 
-```
-JAVA_HOME=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
-```  
+>JAVA_HOME=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home  
 
 发现文件夹名里有空格, `mac` 识别不了, 这个应该so easy, 转义符或者加引号
 然 !!!
