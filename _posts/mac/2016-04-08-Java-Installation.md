@@ -23,7 +23,7 @@ $ /usr/libexec/java_home -v
 接下来就是在 `~/.bash-profile` 里更改/增加 `JAVA_HOME` 为上面那个路径的, 添加 `JAVA_HOME:bin` 到 `PATH`  
 然后 `source ~/.bash-profile` , 理论上再 `java -version` 就可以看到 `8` 了 ... 然!!! 稍后再提
 
-##卸载JAVA7  
+## 卸载JAVA7  
 
 如果你需要卸载原来的 `java7`  
 理论上是不需要的, 因为你改了 `PATH` , 每次调用 `java` 这个命令就会调用 `JAVA_HOME` 里的, 但是我恨它, 所以...  
@@ -44,7 +44,7 @@ $ sudo rm -fr /Library/Java/JavaVirtualMachines/1.7.x...
 
 就我所知的, 这样是应该把 `java7` 给弄掉了  
 
-##路径有空格  
+## 路径有空格  
 
 再来说上面说的坑, 就是当我在 `~/.bash-profile` 里设置  
 
@@ -85,7 +85,7 @@ $ ln -sv /ab\ cd /aaa
 我屈服了, 复制 `/ab cd/` 到 `/aaa` , 然后设置 `JAVA_HOME=/aaa` , 世界安宁了...  
 `View` 里显示的依旧是 `/ab cd/` 下面的, `PATH` 里调用的 `/aaa` 下面的, 反正一样没区别  
 
-##愉快  
+## 愉快  
 
 一个上午就这样愉快的度过了 :)  
 尼玛  
