@@ -55,7 +55,7 @@ abstract void fun()
 
 1. `抽象类` 是对一种事物的抽象, 即对 `类` 的抽象(整体: 包括属性和行为), `接口` 是对行为的抽象  
 
-2. `抽象类` 是一种 `是不是` 的关系(子是父种类), 接口是 `有没有` 的关系(子有父功能)  
+2. `抽象类` 是一种 `是不是` 的关系( `子是父种类` ), 接口是 `有没有` 的关系( `子有父功能` )  
 
 3. `抽象类` 是 `模板式设计` , `接口` 是 `辐射式设计`  
 
@@ -90,4 +90,5 @@ class AlarmDoor extends Door implements Alarm{
 }
 {% endhighlight %}  
 
-End
+
+严重参考 [http://www.cnblogs.com/dolphin0520/p/3811437.html](http://www.cnblogs.com/dolphin0520/p/3811437.html)
