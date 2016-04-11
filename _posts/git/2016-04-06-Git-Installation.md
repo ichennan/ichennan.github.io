@@ -12,7 +12,7 @@ description:
 我们只要下载好模板到项目, 然后负责写文档提交就行了  
 所以最后在 `linux` , `Win` , `Mac` 下都安装了 `Git` , 开始接触 `vim` , 然后学习了一下 `Markdown`  
 
-##Linux安装Git(CentOS)  
+## Linux安装Git(CentOS)  
 
 用的 `CentOS6` , 如果直接用 `yum` 安装, 它会显示版本, 如果是 `1.7.x` 的话, 你就按 `N` , 退出安装, 不然装了待会还得屏蔽这个低版本  
 `yum install` 和 `yum -y install` 区别就是 `-y` 就是省掉中间的确认步骤, 如果你不确定版本是否合适, 就别加上 `-y`  
@@ -81,13 +81,13 @@ $ source /etc/profile
 $ git --version
 ```  
 
-##Mac安装Git  
+## Mac安装Git  
 
 嗯, 这个可难了, 下载一个叫 `git-2.6.4-intel-universal-mavericks.dmg` 的文件, 安装就ok了  
 网址 [https://git-scm.com/download/mac](https://git-scm.com/download/mac)  
 这个安装完似乎啥都不做, 直接终端输入 `git --version` 已经可以了  
 
-##Win安装Git  
+## Win安装Git  
 
 人们说 `Win` 下 `Git` 的软件有很多, 嗯， 反正我用的和 `Mac` 上的一样的  
 [https://git-scm.com/download/win](https://git-scm.com/download/win)  
