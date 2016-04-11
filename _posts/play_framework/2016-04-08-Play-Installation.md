@@ -23,7 +23,7 @@ $ activator new myFirstActivator
 
 它会提示用那种模块, 我选了  
 
-> 6. Play with Scala  
+> 6 Play with Scala  
 
 接着就会自动创建了 `myFirstActivator` 的文件夹, `cd myFirstActivator` 进入文件夹后  
 
@@ -31,4 +31,7 @@ $ activator new myFirstActivator
 $ activator run
 ```  
 
-之后就是漫长的下载各种东西
+之后就是漫长的下载各种东西  
+之后在[http://localhost:9000/](http://localhost:9000/)就可以看到页面了  
+
+
