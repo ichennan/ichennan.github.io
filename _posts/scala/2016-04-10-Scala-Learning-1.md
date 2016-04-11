@@ -16,7 +16,8 @@ description:
 
 ## Nothing用法  
 
-{% highlight scala %}
+{% highlight scala %}  
+
 def error(msg:String): Nothing = throw new RuntimeException(msg)
 
 def divide(x:Int, y:Int):Int = if(y!=0) x/y else error("divided by zero")
@@ -41,7 +42,8 @@ def divide(x:Int, y:Int):Int = if(y!=0) x/y else error("divided by zero")
 
 ### String  
 
-{% highlight scala %}
+{% highlight scala %}  
+
 val x = "abc"
 val y = new String("abc")
 {% endlight %}  
