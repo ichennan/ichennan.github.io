@@ -16,13 +16,12 @@ description:
 
 ## Nothing用法  
 
-{% highlight scala %}  
-
+{% highlight scala %}
 def error(msg:String): Nothing = throw new RuntimeException(msg)
 
 def divide(x:Int, y:Int):Int = if(y!=0) x/y else error("divided by zero")
 // as Nothing is the subClass of all class, so it's the subClass of Int, so the type of divide is still Int
-{% endhighlight %} 
+{% endhighlight %}  
 
 # Any有两个子类 AnyVal 和 AnyRef  
 
@@ -42,8 +41,7 @@ def divide(x:Int, y:Int):Int = if(y!=0) x/y else error("divided by zero")
 
 ### String  
 
-{% highlight scala %}  
-
+{% highlight scala %}
 val x = "abc"
 val y = new String("abc")
 {% endhighlight %}  
@@ -51,7 +49,7 @@ val y = new String("abc")
 由于 `==` 与 `equals` 等价, 所有 `==` 和 `euqals` 都是判断 `String` 自然值相等( `java` 里 `==` 判断引用相等, `equals` 判断自然值相等)  
 判断 `String` 的引用是否相等 要用 `eq` `ne`  
 
-待续
+待续  
 
 ![1](/public/img/2016-04-10-Scala-Learning-1-1.png)  
 
