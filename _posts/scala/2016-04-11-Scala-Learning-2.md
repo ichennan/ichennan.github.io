@@ -55,3 +55,13 @@ object Abc extends App{
 }
 {% endhighlight %}  
 
+结果  
+
+```
+A
+B
+C from Z
+A
+B
+C from Z
+```
