@@ -57,12 +57,37 @@ abstract void fun()
 
 2. 抽象类是一种 `是不是` 的关系(子是父种类), 接口是 `有没有` 的关系(子有父功能)  
 
-```
-Airplane, Bird 可以设计为抽象类, Airplane可以生成波音, 空客, Bird可以生成翠鸟, 燕子  
-而Fly可以设计为接口
-```  
-
 3. 抽象类是模板式设计, 接口是辐射式设计  
 
-  > 模板即ppt模板, 模板A设计了B和C, 改动模板A, 会自动更改B和C, 也就是抽象类中直接更改, 子类不需要变更  
-  > 接口如果变更, 所有遵循这个接口的类都必须变更  
+> Airplane, Bird 可以设计为抽象类, Airplane可以生成波音, 空客, Bird可以生成翠鸟, 燕子  
+> 而Fly可以设计为接口  
+
+> 模板即ppt模板, 模板A设计了B和C, 改动模板A, 会自动更改B和C, 也就是抽象类中直接更改, 子类不需要变更  
+> 接口如果变更, 所有遵循这个接口的类都必须变更  
+
+> 门和警报, 门都有open()和close(), 有些门具有警报alarm(), 可以这样设计  
+
+{% highlight java %}
+abstract class Door{
+    void open();
+    void close();
+}
+
+interface Alarm{
+    void alram();
+}
+
+class AlarmDoor extends Door implements Alarm{
+    void open(){
+        //...
+    }
+    void close(){
+        //...
+    }
+    void alram(){
+        //...
+    }
+}
+{% endhighlight %}  
+
+待续
