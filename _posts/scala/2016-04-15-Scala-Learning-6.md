@@ -8,8 +8,7 @@ description:
 ---
 
 ## Array  
-
----
+---  
 
 长度固定, 元素可变  
 
@@ -30,6 +29,7 @@ array(0)
 
 
 ## List  
+---  
 
 长度固定, 元素不可变  
 
@@ -62,6 +62,7 @@ list.toSet
 ```
 
 ## Tuple  
+---  
 
 长度固定, 元素不可变  
 
@@ -74,6 +75,7 @@ tuple._1
 
 
 ## Range  
+---  
 
 ```
 val range = Range(1, 5)
@@ -85,15 +87,19 @@ List(1,2,3,4)
 Vector(1,2,3,4)
 ```  
 
+
 #### package scala.collection  
+
 
 ![collection](/public/img/collection.png)  
 
 #### package scala.collection.immutable  
 
+
 ![immutable](/public/img/immutable.png)  
 
 #### package scala.collection.mutable  
+
 
 ![mutable](/public/img/mutable.png)  
 
