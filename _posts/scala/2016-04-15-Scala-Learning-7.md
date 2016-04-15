@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scala Learning - 3
+title: Scala Learning - 7
 category: Scala
 tags: scala
 keywords:

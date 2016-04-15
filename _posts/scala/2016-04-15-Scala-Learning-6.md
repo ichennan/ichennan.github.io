@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scala Learning - 3
+title: Scala Learning - 6
 category: Scala
 tags: scala
 keywords:
@@ -71,8 +71,11 @@ tuple._1
 ```  
 
 
-![collection](/public/img/collection.png)
-![immutable](/public/img/immutable.png)
-![mutable](/public/img/mutable.png)
+![collection](/public/img/collection.png)  
+
+![immutable](/public/img/immutable.png)  
+
+![mutable](/public/img/mutable.png)  
+
 
 
