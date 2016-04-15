@@ -73,9 +73,9 @@ tuple._1
 
 ![collection](/public/img/collection.png)  
 
-![immutable](/public/img/collection.png)  
+![immutable](/public/img/immutable.png)  
 
-![mutable](/public/img/collection.png)  
+![mutable](/public/img/mutable.png)  
 
 
 
