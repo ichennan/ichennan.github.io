@@ -79,6 +79,7 @@ tuple._1
 
 ```
 val range = Range(1, 5)
+Range(1,2,3,4)
 1 to 5
 1 until 4
 
