@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spark Learning RDD
+title: Spark Learning RDD - 2
 category: Spark
 tags: spark scala rdd
 keywords:
