@@ -18,6 +18,8 @@ val rdd_from_file = sc.textFile("README.md")
 val rdd_from_list = sc.parallelize(1 to 100, 3)  
 ```  
 
+> parallelize(list, x) x为切片数slices, 默认为每一个文件块创建一个切片(slice), 大小为64M  
+
 ### .map()  
 
 ```
