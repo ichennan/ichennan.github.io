@@ -9,7 +9,7 @@ description:
 
 准备把设计模式过一遍，从工厂模式开始吧  
 下面例子中鼠标，键盘，耳麦为产品，惠普，戴尔为工厂  
-ichennan.com 有空来逛逛  
+[ichennan.com 有空来逛逛](<http://ichennan.com>)  
 
 ### 简单工厂模式  
 
