@@ -11,18 +11,16 @@ description:
   
 [ichennan.com 有空来逛逛](<http://ichennan.com>)  
 
-### 单例模式 Singleton  
+## 单例模式 Singleton  
 
 > 一个类有且仅有一个实例，并且自行实例化向整个系统提供  
-
-1. 一个类只有一个实例  
-2. 自己创建这个实例  
-3. 整个系统都使用这个实例  
-
+> 1. 一个类只有一个实例  
+> 2. 自己创建这个实例  
+> 3. 整个系统都使用这个实例  
   
 这个模式直接看代码，比看定义容易理解。Talk is cheap, show me the code.  
 
-｀*饿汉*｀  
+### 饿汉
 
 ```
 public class Singleton {  
@@ -32,10 +30,24 @@ public class Singleton {
         return instance;  
     }  
 }  
+  
+或者  
 
+public class Singleton {  
+    private static Singleton instance;
+    static{
+        instance = new Singleton();
+    }   
+    private Singleton (){}  
+    public static Singleton getInstance() {  
+        return instance;  
+    }  
+}  
 ```
+> 优点: 写法简单，类加载的时候完成实例化，避免线程同步问题  
+> 缺点: 没有实现lazy loading，加载时候就实例化了。造成内存浪费  
 
-> *懒汉*  
+### 懒汉  
 
 ```
 public class Singleton {  
@@ -52,7 +64,10 @@ public class Singleton {
 }  
 ```
 
-> *懒汉-双重锁定*  
+> 优点: lazy loading  
+> 缺点: 效率低，每次获得实例，执行getInstance()都需要同步  
+
+### 懒汉-双重锁定  
   
 与懒汉的区别在于，不是同步getInstance()方法，而是在判断为null的时候，同步Singleton.class  
 同时用了volatile，所以称之为双重锁定  
@@ -74,7 +89,9 @@ public class Singleton {
 }  
 ```
 
-> *静态内部类*
+> 优点: 线程安全，延时加载，效率较高  
+
+### 静态内部类
 
 ```
 public class Singleton {  
