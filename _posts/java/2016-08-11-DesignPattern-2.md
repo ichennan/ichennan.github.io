@@ -112,8 +112,12 @@ enum Singleton{
     INSTANCE;  
 }  
 ```
-
-#### 防止反射漏洞  
+  
+  
+  
+## 防漏洞  
+  
+### 防止反射漏洞  
 
 在构造函数里抛出异常
 
@@ -125,8 +129,8 @@ private Singleton() {
 }  
 ```
 
-#### 防止反序列化漏洞  
-
+### 防止反序列化漏洞  
+  
 ```
 private Object readResolve() throws ObjectStreamException {  
     return instance;  
