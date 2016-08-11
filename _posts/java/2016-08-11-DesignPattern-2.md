@@ -70,7 +70,7 @@ public class Singleton {
 ### 懒汉-双重锁定  
   
 与懒汉的区别在于，不是同步getInstance()方法，而是在判断为null的时候，同步Singleton.class  
-同时用了volatile，所以称之为双重锁定  
+同时用了volatile，避免了instance在分配内存和初始化之间的多线程问题，所以称之为双重锁定  
 
 ```
 public class Singleton {  
@@ -102,6 +102,14 @@ public class Singleton {
     public static Singleton getInstance() {  
         return SingletonHolder.INSTANCE;  
     }  
+}  
+```
+
+### 枚举  
+
+```
+enum Singleton{  
+    INSTANCE;  
 }  
 ```
 
