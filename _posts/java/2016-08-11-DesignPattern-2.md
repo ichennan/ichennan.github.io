@@ -14,10 +14,15 @@ description:
 ### 单例模式 Singleton  
 
 > 一个类有且仅有一个实例，并且自行实例化向整个系统提供  
+
+1. 一个类只有一个实例  
+2. 自己创建这个实例  
+3. 整个系统都使用这个实例  
+
   
 这个模式直接看代码，比看定义容易理解。Talk is cheap, show me the code.  
 
-> *饿汉*  
+｀*饿汉*｀  
 
 ```
 public class Singleton {  
@@ -26,7 +31,8 @@ public class Singleton {
     public static Singleton getInstance() {  
         return instance;  
     }  
-} 
+}  
+
 ```
 
 > *懒汉*  
@@ -47,6 +53,7 @@ public class Singleton {
 ```
 
 > *懒汉-双重锁定*  
+  
 与懒汉的区别在于，不是同步getInstance()方法，而是在判断为null的时候，同步Singleton.class  
 同时用了volatile，所以称之为双重锁定  
 
