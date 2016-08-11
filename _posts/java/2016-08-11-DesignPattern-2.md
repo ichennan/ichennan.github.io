@@ -113,4 +113,24 @@ enum Singleton{
 }  
 ```
 
+#### 防止反射漏洞  
+
+在构造函数里抛出异常
+
+```
+private Singleton() {  
+    if (null != instance) {  
+        throw new RuntimeException();  
+    }  
+}  
+```
+
+#### 防止反序列化漏洞  
+
+```
+private Object readResolve() throws ObjectStreamException {  
+    return instance;  
+}  
+```
+
 
