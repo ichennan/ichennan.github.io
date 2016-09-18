@@ -49,6 +49,7 @@ description:
 ```
 <blc.version>5.0.3-GA</blc.version>  
 <blc.menu.version>2.0.1-GA</blc.menu.version>  
+<broadleaf-sample-payment-gateway.version>2.0.0-GA</broadleaf-sample-payment-gateway.version>
 ```
   
 
