@@ -73,3 +73,46 @@ description:
 <blc.menu.version>2.0.0-GA</blc.menu.version>  
 <broadleaf-sample-payment-gateway.version>2.0.0-GA</broadleaf-sample-payment-gateway.version>  
 ```
+
+
+## My Solution  
+  
+### framework  
+  
+```
+BroadleafCommerce  
+branch: BroadleafCommerce-4.0.x  
+> version: 4.0.11-SNAPSHOT -> 8.0.0-CN  
+> Latest commit f0e641b  on May 18  
+> @jefffischer jefffischer  
+> Merge remote-tracking branch 'upstream/BroadleafCommerce-4.0.x'  
+download zip  
+```
+  
+### menu  
+  
+```
+Menu  
+branch: master  
+> version: 1.0.0-GA -> 7.0.0-CN  
+> Latest commit 672123d  on Jun 11, 2015  
+> @phillipuniverse phillipuniverse  
+> Merge tag 'broadleaf-menu-1.0.0-GA'  
+download zip  
+broadleaf-module-parent: 1.0.2-GA  
+blc.version: 4.0.0-GA -> 8.0.0-CN  
+```
+  
+### web  
+  
+```
+DemoSite  
+branch: master  
+> version: 1.0 -> 9.0.0-CN  
+> Latest commit e9d0673  on Dec 7, 2015  
+> @phillipuniverse phillipuniverse  
+> Merge tag 'broadleaf-4.0.5-GA'  
+download zip  
+blc.version: 4.0.5-GA -> 8.0.0-CN  
+blc.menu.version: 1.0.0-GA -> 7.0.0-CN  
+```
