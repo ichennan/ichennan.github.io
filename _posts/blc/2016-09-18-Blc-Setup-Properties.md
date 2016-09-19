@@ -31,11 +31,15 @@ VM options
   
 ## hibernate.hbm2ddl.auto  
   
-> validate: validate the schema, makes no changes to the database, show error if different  
-> update: update the schema  
-> create: create the schema, destroy previous data  
-> create-drop: create, and drop the schema at the end of the session  
-> none  
+> **validate:** validate the schema, makes no changes to the database, show error if different  
+  
+> **update:** update the schema  
+  
+> **create:** create the schema, destroy previous data  
+  
+> **create-drop:** create, and drop the schema at the end of the session  
+  
+> **none**  
   
 ## My suggestion  
   
