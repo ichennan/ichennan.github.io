@@ -31,13 +31,11 @@ VM options
   
 ## hibernate.hbm2ddl.auto  
   
-```
-validate: validate the schema, makes no changes to the database, show error if different  
-update: update the schema  
-create: create the schema, destroy previous data  
-create-drop: create, and drop the schema at the end of the session  
-none
-```
+> validate: validate the schema, makes no changes to the database, show error if different  
+> update: update the schema  
+> create: create the schema, destroy previous data  
+> create-drop: create, and drop the schema at the end of the session  
+> none  
   
 ## My suggestion  
   
@@ -50,8 +48,9 @@ blCMSStorage.hibernate.hbm2ddl.auto=update
 blSecurePU.hibernate.hbm2ddl.auto=update  
 ```
   
-when you first run or you want to clear all data, pls create `site.war` before `admin.war`  
-  
+when you first run or you want to clear all data  
+*(complie `site.war` before `admin.war`)*  
+
 ```
 ../site/../runtime-properties/development.properties  
 blPU.hibernate.hbm2ddl.auto=create  
