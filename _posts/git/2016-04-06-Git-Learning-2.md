@@ -27,4 +27,8 @@ Thumbs.db
 ```
 $ git stash
 $ git pull
-```  
+```
+
+**还原成github版本**  
+
+git reset --hard HEAD
