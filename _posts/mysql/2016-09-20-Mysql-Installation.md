@@ -132,5 +132,20 @@ set character_set_client = utf8;
   
 里面有几个选项不是utf8的都可以通过这样set成utf8  
   
-以上
-
+以上  
+  
+再啰嗦一个3306端口对外开放  
+  
+```
+$ /sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT  
+$ /etc/rc.d/init.d/iptables save  
+$ /etc/init.d/iptables status  
+```
+  
+如果外部需要连接这个数据库，还需对具体ip开放  
+  
+```
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.16.10.133' IDENTIFIED BY 'Abcd_1234'
+```
+  
+不啰嗦了，这边的密码要求很高
