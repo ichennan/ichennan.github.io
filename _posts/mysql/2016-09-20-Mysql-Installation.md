@@ -148,4 +148,23 @@ $ /etc/init.d/iptables status
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.16.10.133' IDENTIFIED BY 'Abcd_1234'
 ```
   
-不啰嗦了，这边的密码要求很高
+不啰嗦了，这边的密码要求很高  
+  
+还有在linux上默认是表名大小写敏感的，所以你还是必须找到my.cnf...  
+  
+```
+vim /etc/my.cnf
+```
+  
+之后在 `[mysqld]` 后面加上这几句  
+  
+```
+lower_case_table_names=1  
+character-set-server=utf8  
+collation-server=utf8_general_ci  
+```
+  
+然后 `service mysqld stop` and `service mysqld start`  
+当然只有第一句是和表名大小写敏感有关, 后两句是utf8相关。前面设置过了，这边再加也无妨。  
+这边有个坑就是如果你改之前已经创建了一些表，表名又是大写的，当你改过之后，你会发现找不到表，删不了database，出现error:39  
+这种情况你只能把加上的这几句先删掉，重启mysqld服务，删掉你想删的，再加回这几句话，就ok了。呵呵  
