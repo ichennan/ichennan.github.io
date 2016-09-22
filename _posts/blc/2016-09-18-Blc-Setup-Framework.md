@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blc Setup Properties
+title: Blc Setup Framework
 category: Blc
 tags: blc
 keywords:
